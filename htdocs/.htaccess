@@ -1,0 +1,28 @@
+# redirect fibrotools.com to www.fibrotools.com
+#RewriteEngine on
+
+# Redirect to domain with www.
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Same for HTTPS:
+# RewriteCond %{HTTPS} on
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Rewrite underscores to hyphens for new URLs
+# RewriteRule !\.(html|php)$ - [S=6]
+# RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4-$5-$6-$7 [E=underscores:Yes]
+# RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4-$5-$6 [E=underscores:Yes]
+# RewriteRule ^([^_]*)_([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4-$5 [E=underscores:Yes]
+# RewriteRule ^([^_]*)_([^_]*)_([^_]*)_(.*)$ $1-$2-$3-$4 [E=underscores:Yes]
+# RewriteRule ^([^_]*)_([^_]*)_(.*)$ $1-$2-$3 [E=underscores:Yes]
+# RewriteRule ^([^_]*)_(.*)$ $1-$2 [E=underscores:Yes]
+
+# RewriteCond %{ENV:underscores} ^Yes$
+# RewriteRule (.*) /$1 [R=301,L]
+
+# Add support for SVG images
+AddType image/svg+xml svg
+AddType image/svg+xml svgz

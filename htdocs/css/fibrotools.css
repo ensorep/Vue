@@ -1,0 +1,99 @@
+/*Branded text for page titles*/
+.logo-bold {
+	font-weight:900;
+	letter-spacing:-2px;
+	font-size:100%;
+	font-family: 'Arial Black', sans-serif;
+}
+.logo-light{
+	font-weight:100;
+	font-size:135%;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.logo-red{
+	color:#993300;
+}
+.bold {
+	font-weight: 600; }
+
+.red {
+	color: #663300;
+	}
+
+.big_red {
+	color: #993300;
+	font-weight:bold; }
+
+a:active {
+	text-decoration: underline }
+
+a:visited {
+	color: #663300;
+	text-decoration: none }
+
+a:link {
+	color: #663300;
+	text-decoration: none }
+
+a:hover {
+	text-decoration: underline }
+	
+/*Heading styles*/
+
+h1 {
+	font-size:32px;
+	font-weight:bold;
+	font-style:normal;
+	display:inline;
+	position:relative;
+	top:-6px;
+	margin: 0px;
+	padding-left:2px;
+}
+
+h2 {font-size:20px;font-weight:bold}
+h3 {font-size:18px;font-weight:bold}
+h4 {font-size:1em;font-weight:bold;}
+h5 {font-size:1em;font-weight:bold;font-style:italic}
+.tm {font-size:10px}
+.bold {font-weight:600; font-size:18px}
+.under_heading {margin-top:4px; margin-bottom:12px}
+.paragraph {margin-top:6px; margin-bottom:6px}
+
+div #right_gutter h1 {display:block;}
+
+/*Style for the curved lines that surround most images on the site*/
+div#right_gutter div.img-frame {float:right;clear:right;display:block;}
+div .img-frame {position:relative;}
+div.img-frame img.frame {max-height:100%;max-width:100%;z-index:-1;}
+div.img-frame .content {max-height:75%;max-width:75%;margin:auto;position:absolute;top:0px;left:0;right:0;bottom:0;}
+
+/*Style for structural div elements*/
+#outer_container {width: 100%;}
+#inner_container {width: 60%;min-width: 645px; }
+#left_gutter {float:left; width:200px;}
+#main_content {margin-left:200px;}
+#right_gutter {float:right; width:auto;text-align:right;}
+#bottom_nav {text-align:center; padding-top:40px;}
+#title {height:42px;vertical-align:bottom;}
+#title img {height:100%;width:auto;}
+
+/*Style for left-side navigation bar*/
+/*div #left_gutter table tr td img {width:90%;min-width:132px;}*/
+#side-nav {}
+.icon {color:black;vertical-align:middle;margin-right:5px;}
+#side-nav div {width:100%;height:40px;}
+#side-nav img {width:30px;vertical-align:middle;margin-right:5px;}
+#side-nav a {text-decoration:none;font-family: 'Josefin Sans', sans-serif;font-size:16pt;}
+#side-nav a:hover {font-weight:bold;}
+
+body {background-color : #ffffff;font-family:Arial, Helvetica, sans-serif; font-size:16px; color:black;}
+.right {text-align:right}
+.left {text-align:left}
+ul.gutter {padding-left:15px; margin-left: 5px; margin-top:5px;text-align: left}
+li.gutter {margin-left:5px; line-height:30px}
+ul.content {padding-left:15px; margin-left:0px; line-height:30px;}
+li.content {line-height:20px}
+td {font-size:16px}
+td.red1 {font-size:10px}
+sup {font-size:xx-small; vertical-align:super;}

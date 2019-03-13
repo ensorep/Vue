@@ -1,0 +1,14 @@
+.button { display: inline-block; height: 38px; padding: 0 30px; color: white; text-align: center; font-weight: 600; line-height: 38px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: #993300; border-radius: 10px; border: 1px solid #bbb; cursor: pointer; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+@media only screen and (max-width: 1280px) { #hero span.logo-bold { font-size: 200%; }
+  #hero span.red { font-size: 100%; }
+  #hero a.button { font-size: 70%; padding: 0 10px; } }
+
+@media only screen and (min-width: 1281px) and (max-width: 1600px) { #hero span.logo-bold { font-size: 250%; }
+  #hero span.red { font-size: 125%; }
+  #hero a.button { font-size: 100%; padding: 0 15px; } }
+
+@media only screen and (min-width: 1601px) { #hero span.logo-bold { font-size: 350%; }
+  #hero span.red { font-size: 150%; }
+  #hero a.button { font-size: 150%; } }
+/*# sourceMappingURL=styles.min.css.map */
