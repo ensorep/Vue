@@ -72,7 +72,7 @@ div.img-frame .content { max-height: 75%; max-width: 75%; margin: auto; position
 /*Style for structural div elements*/
 #outer_container { width: 100%; }
 
-#inner_container { width: 60%; min-width: 645px; }
+#inner_container { width: 60%; min-width: 645px; margin: auto; }
 
 #left_gutter { float: left; width: 200px; }
 
