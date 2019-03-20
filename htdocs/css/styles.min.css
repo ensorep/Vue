@@ -21,15 +21,21 @@
 
 .bold { font-weight: 600; }
 
+.under { border-bottom: 1px solid black; }
+
 .red { color: #663300; }
+
+#qmark { width: 80px; height: 80px; float: right; }
 
 .big_red { color: #993300; font-weight: bold; }
 
+a { text-decoration: none; }
+
 a:active { text-decoration: underline; }
 
-a:visited { color: #663300; text-decoration: none; }
+a:visited { color: #663300; }
 
-a:link { color: #663300; text-decoration: none; }
+a:link { color: #663300; }
 
 a:hover { text-decoration: underline; }
 
@@ -72,7 +78,7 @@ div.img-frame .content { max-height: 75%; max-width: 75%; margin: auto; position
 
 #main_content { margin-left: 200px; }
 
-#right_gutter { float: right; width: auto; text-align: right; }
+#right_gutter { float: right; width: auto; }
 
 #bottom_nav { text-align: center; padding-top: 40px; }
 
@@ -98,6 +104,10 @@ body { background-color: #ffffff; font-family: Arial, Helvetica, sans-serif; fon
 
 .left { text-align: left; }
 
+.cascade { font-weight: bold; margin-bottom: 5rem; font-size: 1.15rem; }
+
+.cascade p a { color: black; }
+
 ul.gutter { padding-left: 15px; margin-left: 5px; margin-top: 5px; text-align: left; }
 
 li.gutter { margin-left: 5px; line-height: 30px; }
@@ -111,4 +121,8 @@ td { font-size: 16px; }
 td.red1 { font-size: 10px; }
 
 sup { font-size: xx-small; vertical-align: super; }
+
+.fibroexamples { display: table; }
+
+.fibroexamples td { padding: 1rem; }
 /*# sourceMappingURL=styles.min.css.map */
