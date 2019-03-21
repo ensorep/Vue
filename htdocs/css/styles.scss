@@ -22,6 +22,31 @@ $qmark: 80px;
 	cursor: pointer;
 	box-sizing: border-box;
 }
+#hero{
+	position: relative;
+	&-banner {
+		padding-left:2px;
+		position:absolute;
+		top:0px;
+	}
+}
+
+a.button {
+	&-learnmore {
+		@extend .button;
+		float:right;
+		position:absolute;
+		right:15px;
+		bottom:10px;
+		color:#fff;
+		text-decoration:none;
+	}
+}
+
+#learnmore {
+	color: #fff;
+}
+
 
 @media only screen and (max-width: 1280px) {
 	#hero span.logo-bold {
@@ -87,6 +112,21 @@ $qmark: 80px;
 
 	&-red {
 		color: $logo-red;
+	}
+	&-text {
+		color: #fff;
+		position: absolute;
+		&-header{
+			@extend .logo-bold;
+			bottom:25px;
+			left:15px;
+		}
+		&-sub {
+			float:left;
+			font-weight:bold;
+			bottom:10px;
+			left:15px;
+		}
 	}
 }
 
@@ -346,4 +386,8 @@ sup {
 	td {
 		padding: 1rem;
 	}
+}
+
+.italic {
+	font-style: italic;
 }

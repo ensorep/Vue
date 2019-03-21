@@ -1,25 +1,39 @@
-.button { display: inline-block; height: 38px; padding: 0 30px; color: white; text-align: center; font-weight: 600; line-height: 38px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: #993300; border-radius: 10px; border: 1px solid #bbb; cursor: pointer; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.button, a.button-learnmore { display: inline-block; height: 38px; padding: 0 30px; color: white; text-align: center; font-weight: 600; line-height: 38px; letter-spacing: .1rem; text-transform: uppercase; text-decoration: none; white-space: nowrap; background-color: #993300; border-radius: 10px; border: 1px solid #bbb; cursor: pointer; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-@media only screen and (max-width: 1280px) { #hero span.logo-bold { font-size: 200%; }
+#hero { position: relative; }
+
+#hero-banner { padding-left: 2px; position: absolute; top: 0px; }
+
+a.button-learnmore { float: right; position: absolute; right: 15px; bottom: 10px; color: #fff; text-decoration: none; }
+
+#learnmore { color: #fff; }
+
+@media only screen and (max-width: 1280px) { #hero span.logo-bold, #hero span.logo-text-header { font-size: 200%; }
   #hero span.red { font-size: 100%; }
-  #hero a.button { font-size: 70%; padding: 0 10px; } }
+  #hero a.button, #hero a.button-learnmore { font-size: 70%; padding: 0 10px; } }
 
-@media only screen and (min-width: 1281px) and (max-width: 1600px) { #hero span.logo-bold { font-size: 250%; }
+@media only screen and (min-width: 1281px) and (max-width: 1600px) { #hero span.logo-bold, #hero span.logo-text-header { font-size: 250%; }
   #hero span.red { font-size: 125%; }
-  #hero a.button { font-size: 100%; padding: 0 15px; } }
+  #hero a.button, #hero a.button-learnmore { font-size: 100%; padding: 0 15px; } }
 
-@media only screen and (min-width: 1601px) { #hero span.logo-bold { font-size: 350%; }
+@media only screen and (min-width: 1601px) { #hero span.logo-bold, #hero span.logo-text-header { font-size: 350%; }
   #hero span.red { font-size: 150%; }
-  #hero a.button { font-size: 150%; } }
+  #hero a.button, #hero a.button-learnmore { font-size: 150%; } }
 
 /*Branded text for page titles*/
 .logo { top: 8px; }
 
-.logo-bold { font-weight: 900; letter-spacing: -2px; font-size: 100%; font-family: 'Arial Black', sans-serif; }
+.logo-bold, .logo-text-header { font-weight: 900; letter-spacing: -2px; font-size: 100%; font-family: 'Arial Black', sans-serif; }
 
 .logo-light { font-weight: 100; font-size: 135%; font-family: 'Josefin Sans', sans-serif; }
 
 .logo-red { color: #993300; }
+
+.logo-text { color: #fff; position: absolute; }
+
+.logo-text-header { bottom: 25px; left: 15px; }
+
+.logo-text-sub { float: left; font-weight: bold; bottom: 10px; left: 15px; }
 
 .bold { font-weight: 600; }
 
@@ -125,4 +139,6 @@ sup { font-size: xx-small; vertical-align: super; }
 .fibroexamples { display: table; }
 
 .fibroexamples td { padding: 1rem; }
+
+.italic { font-style: italic; }
 /*# sourceMappingURL=styles.min.css.map */

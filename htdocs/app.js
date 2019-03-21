@@ -20,6 +20,50 @@ Vue.component('left-nav', {
   </div>`
 })
 
+Vue.component('homepage', {
+    data: function() {
+        return{
+
+        }
+    },
+    template: `<div id="homepage">
+    <div id="hero">
+      <img id="hero-banner" name="hm_tagline" src="pics/Fibro_banner.svg"
+        width="100%" />
+      <img name="Iko_hero" src="pics/iko-twin-station-2.jpg" width="100%" />
+      <span class="logo-text logo-text-header">Meet IKo&trade;</span>
+      <span class="logo-text logo-text-sub">Compact.
+        Inexpensive. And it works.</span>
+      <a id="learnmore" class="button-learnmore"
+        href="products.html">Learn More <span class="fa fa-arrow-right"></span></a>
+    </div>
+
+    <h3 class="italic"> ECSI Fibrotools designs, builds ,and supplies efficient, precision benchtop
+      equipment for electroplating of MICRO- and NANO-structures. <span class="big_red">FIBRotools&trade;</span>
+      are an ideal solution for academic and R&amp;D institutions seeking rapid optimization of novel
+      designs for MEMS and NANO structures and advanced high-density interconnects (HDI).
+      Publish and commercialize innovations faster with our uniform, reproducible electroplating process.
+    </h3>
+
+    <p>
+      What enables us to do this at a low cost is our proprietary <span class="big_red">FIBRotools&trade;
+        -- Fiber-Initiated &nbsp;Boundary-layer Removal --</span> technology. Complemented
+      by our advanced wafer-holder design, <span class="big_red">FIBRotools&trade;</span> produces uniformity,
+      eliminates bubbles and minimizes edge effects. <span class="big_red">FIBRotools&trade;</span> is based on
+      the work of our founder and CEO, Dr. Igor V. Kadija, whose discoveries in the physicochemical
+      hydrodynamics of wet processing were awarded three US
+      patents with worldwide patent coverage.</p>
+
+    <p><a href="addonoptions.html">Flexible and adaptable</a> to many different process configurations,
+      <span class="big_red">FIBRotools&#8482;</span> enables fast track R&amp;D in design advancements of
+      a wide variety of MEMS, NANO, and HDI devices. <a href="products.html">Click here</a>
+      to find out more about our <a href="products.html">products</a> and <a href="addonoptions.html">add-on
+        options</a>.
+    </p>
+  </div>`
+})
+
+
 Vue.component('footer-nav', {
     data: function() {
         return{}
@@ -44,5 +88,10 @@ Vue.component('footer-nav', {
 const app = new Vue({
     el: '#app',
     data: {
+    }
+    methods: {
+        url: function() {
+            return document.URL;
+        }
     }
 })
