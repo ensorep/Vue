@@ -13,6 +13,8 @@
   #hero a.button { font-size: 150%; } }
 
 /*Branded text for page titles*/
+.logo { top: 8px; }
+
 .logo-bold { font-weight: 900; letter-spacing: -2px; font-size: 100%; font-family: 'Arial Black', sans-serif; }
 
 .logo-light { font-weight: 100; font-size: 135%; font-family: 'Josefin Sans', sans-serif; }
