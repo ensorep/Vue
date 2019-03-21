@@ -88,10 +88,16 @@ Vue.component('footer-nav', {
 const app = new Vue({
     el: '#app',
     data: {
-    }
+      message: 'a',
+    },
     methods: {
         url: function() {
-            return document.URL;
+            if(document.URL.includes('index.html')){
+              return true
+            }
+            else {
+              return false
+            }
         }
     }
 })

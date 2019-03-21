@@ -30,7 +30,9 @@
   
   
   <div id="app">
-    {{url()}
+    <p v-if="this.url()">
+      OH JEEZ RICK!
+    </p>
     <left-nav></left-nav>
     <div id="main_content">
       <homepage></homepage>
