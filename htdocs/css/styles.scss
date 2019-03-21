@@ -214,19 +214,15 @@ div.img-frame .content {
 }
 
 /*Style for structural div elements*/
-#outer_container {
-	width: 100%;
-}
 
-#inner_container {
+#app {
 	width: 60%;
 	min-width: 645px;
 	margin: auto;
 }
 
-#left_gutter {
+#side-nav {
 	float: left;
-	width: 200px;
 }
 
 #main_content {

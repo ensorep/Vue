@@ -72,11 +72,9 @@ div.img-frame img.frame { max-height: 100%; max-width: 100%; z-index: -1; }
 div.img-frame .content { max-height: 75%; max-width: 75%; margin: auto; position: absolute; top: 0px; left: 0; right: 0; bottom: 0; }
 
 /*Style for structural div elements*/
-#outer_container { width: 100%; }
+#app { width: 60%; min-width: 645px; margin: auto; }
 
-#inner_container { width: 60%; min-width: 645px; margin: auto; }
-
-#left_gutter { float: left; width: 200px; }
+#side-nav { float: left; }
 
 #main_content { margin-left: 200px; }
 
