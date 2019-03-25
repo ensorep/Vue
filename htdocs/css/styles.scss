@@ -46,12 +46,13 @@ a.button {
 .mc-field-group {
 	display: flex;
 	justify-content: space-between;
-
-	.input-group {
-		display: block;
-	}
+	width: 50%;
 }
 
+.input-group {
+	display: block;
+	width: 100%;
+}
 
 #learnmore {
 	color: #fff;
@@ -269,6 +270,10 @@ div.img-frame .content {
 	width: 60%;
 	min-width: 645px;
 	margin: auto;
+}
+
+#hp_hero {
+	width: 100%;
 }
 
 #side-nav {

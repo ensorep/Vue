@@ -6,6 +6,10 @@
 
 a.button-learnmore { float: right; position: absolute; right: 15px; bottom: 10px; color: #fff; text-decoration: none; }
 
+.mc-field-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 50%; }
+
+.input-group { display: block; width: 100%; }
+
 #learnmore { color: #fff; }
 
 @media only screen and (max-width: 1280px) { #hero span.logo-bold, #hero span.logo-text-header { font-size: 200%; }
@@ -87,6 +91,8 @@ div.img-frame .content { max-height: 75%; max-width: 75%; margin: auto; position
 
 /*Style for structural div elements*/
 #app { width: 60%; min-width: 645px; margin: auto; }
+
+#hp_hero { width: 100%; }
 
 #side-nav { float: left; }
 

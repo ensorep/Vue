@@ -30,7 +30,7 @@ Vue.component('homepage', {
     <div id="hero">
       <img id="hero-banner" name="hm_tagline" src="pics/Fibro_banner.svg"
         width="100%" />
-      <img name="Iko_hero" src="pics/iko-twin-station-2.jpg" width="100%" />
+      <img id="hp_hero" name="Iko_hero" src="pics/iko-twin-station-2.jpg"/>
       <span class="logo-text logo-text-header">Meet IKo&trade;</span>
       <span class="logo-text logo-text-sub">Compact.
         Inexpensive. And it works.</span>
