@@ -43,6 +43,16 @@ a.button {
 	}
 }
 
+.mc-field-group {
+	display: flex;
+	justify-content: space-between;
+
+	.input-group {
+		display: block;
+	}
+}
+
+
 #learnmore {
 	color: #fff;
 }

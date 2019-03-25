@@ -63,7 +63,6 @@ Vue.component('homepage', {
   </div>`
 })
 
-
 Vue.component('footer-nav', {
     data: function() {
         return{}
@@ -80,7 +79,7 @@ Vue.component('footer-nav', {
             <a href="cost.html">Cost</a> &#8226;
             <a href="contact.html">Contact</a> &#8226;
             <a href="customers.html">Customers</a>
-            <div style="margin-top:10px;text-align:center">&copy;ECSI Fibrotools</div>
+            <div style="margin-top:10px;text-align:center">&copy;ECSI Fibrotools 2015 - 2019</div>
           </div>`
 })
 
