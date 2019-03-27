@@ -15,12 +15,12 @@ Vue.component('left-nav', {
     </div>
 
     <ul class="nav-ul navbar-right">
-    <li class="nav-item">About</li>
-    <li class="nav-item">Technology</li>
-    <li class="nav-item">Products</li>
-    <li class="nav-item">News</li>
-    <li class="nav-item">FAQ</li>
-    <li class="nav-item">Contact</li>
+    <a class="nav-a"><li class="nav-item">About</li></a>
+    <a class="nav-a"><li class="nav-item">Technology</li></a>
+    <a class="nav-a"><li class="nav-item">Products</li></a>
+    <a class="nav-a"><li class="nav-item">News</li></a>
+    <a class="nav-a"><li class="nav-item">FAQ</li></a>
+    <a class="nav-a"><li class="nav-item">Contact</li></a>
     </ul>
 
   </div>`
@@ -32,19 +32,17 @@ Vue.component('homepage', {
 
         }
     },
-    template: `<div id="homepage">
-    <div class="hero">
-    <div id="overlay"></div>
-      <div class="hero-img"/>
-    </div>
-
-    <h3 class="italic"> ECSI Fibrotools designs, builds ,and supplies efficient, precision benchtop
-      equipment for electroplating of MICRO- and NANO-structures. <span class="big_red">FIBRotools&trade;</span>
-      are an ideal solution for academic and R&amp;D institutions seeking rapid optimization of novel
-      designs for MEMS and NANO structures and advanced high-density interconnects (HDI).
-      Publish and commercialize innovations faster with our uniform, reproducible electroplating process.
-    </h3>
-  </div>`
+    template: `
+      <div class="hero">
+        <!--<div id="overlay"></div>-->
+        <div class="hero-img">
+          <div class="hero_focus">
+            <h3 class="hero_focus-main"> Meet IKo<span id="tm">&trade;</span></h3>
+            <span class="hero_focus-subline">Compact. Inexepensive. Simply unmatched.</span>
+            <div class="CTA_home"><button class="CTA_home-learn">Learn More</button></div>
+          </div>
+        </div>
+      </div>`
 })
 
 Vue.component('footer-nav', {
@@ -54,15 +52,12 @@ Vue.component('footer-nav', {
     template: `
           <div id="bottom_nav" style="margin-top:20px;">
             <hr />
-            <a href="index.html">Home</a> &#8226;
             <a href="about.html">About</a> &#8226;
             <a href="technology.html">Technology</a> &#8226;
             <a href="products.html">Products</a> &#8226;
             <a href="news.html">News</a> &#8226;
             <a href="faq.html">FAQ</a> &#8226;
-            <a href="cost.html">Cost</a> &#8226;
-            <a href="contact.html">Contact</a> &#8226;
-            <a href="customers.html">Customers</a>
+            <a href="contact.html">Contact</a>
             <div style="margin-top:10px;text-align:center">&copy;ECSI Fibrotools 2015 - 2019</div>
           </div>`
 })
