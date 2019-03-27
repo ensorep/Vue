@@ -4,6 +4,94 @@ $logo-red: #993300;
 $black: #000000;
 $qmark: 80px;
 
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+#navbar {
+	z-index:50;
+	display:inline-flex;
+	justify-content: space-between;
+	width: 100%;
+	&-left {
+		flex: 1;
+	}
+	.logo-top {
+		margin: 1rem;
+		display: inline-block;
+		#ECSI {
+			color: $logo-red;
+			font-size: 4rem;
+			margin: 0;
+			padding: 0;
+			&_Fibrotools{
+				margin: 0;
+				padding: 0;
+				font-size: 1.25rem;
+				text-align: center;
+				position: relative;
+				bottom: .5rem;
+			}
+		}
+	}
+	.nav-ul {
+		display: inline-block;
+		margin: auto;
+		padding: 0;
+		.nav-item{
+			list-style: none;
+			display:inline;
+			padding-right: 2rem;
+			font-size: 1.25rem;
+		}
+	}
+}
+
+.hero {
+	position: relative;
+	#overlay {
+		position: absolute;
+		width:100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.3);
+		z-index: 1;
+	}
+	&-img {
+		background: url('../pics/iko-twin-station-2.jpg');
+		background-attachment: fixed;
+		width: 100%;
+		height: 600px;
+		display:block;
+		margin: auto;
+	}
+	&-banner {
+		z-index: 2;
+	}
+}
+
+
+#CTA {
+	width: 100%;
+	height: 700px;
+	background-color: blue;
+}
+
+
+
+
+
+
+
+
+// OLD STYLES
 .button {
 	display: inline-block;
 	height: 38px;
@@ -22,9 +110,10 @@ $qmark: 80px;
 	cursor: pointer;
 	box-sizing: border-box;
 }
-#hero{
+.hero{
 	position: relative;
 	&-banner {
+		color: #fff;
 		padding-left:2px;
 		position:absolute;
 		top:0px;
@@ -179,40 +268,6 @@ a {
 	}
 }
 
-/*Heading styles*/
-
-h1 {
-	font-size: 32px;
-	font-weight: bold;
-	font-style: normal;
-	display: inline;
-	position: relative;
-	top: -6px;
-	margin: 0px;
-	padding-left: 2px;
-}
-
-h2 {
-	font-size: 20px;
-	font-weight: bold
-}
-
-h3 {
-	font-size: 18px;
-	font-weight: bold
-}
-
-h4 {
-	font-size: 1em;
-	font-weight: bold;
-}
-
-h5 {
-	font-size: 1em;
-	font-weight: bold;
-	font-style: italic
-}
-
 .tm {
 	font-size: 10px
 }
@@ -266,27 +321,18 @@ div.img-frame .content {
 
 /*Style for structural div elements*/
 
-#app {
-	width: 60%;
-	min-width: 645px;
+.hero-banner {
+	position: absolute;
+	top: 0;
 	margin: auto;
 }
 
-#hp_hero {
-	width: 100%;
-}
-
-#side-nav {
-	float: left;
+#app {
+	margin: 0;
 }
 
 #main_content {
-	margin-left: 200px;
-}
-
-#right_gutter {
-	float: right;
-	width: auto;
+	display: inline-block;
 }
 
 #bottom_nav {
@@ -311,27 +357,6 @@ div.img-frame .content {
 	color: black;
 	vertical-align: middle;
 	margin-right: 5px;
-}
-
-#side-nav div {
-	width: 100%;
-	height: 40px;
-}
-
-#side-nav img {
-	width: 30px;
-	vertical-align: middle;
-	margin-right: 5px;
-}
-
-#side-nav a {
-	text-decoration: none;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 16pt;
-}
-
-#side-nav a:hover {
-	font-weight: bold;
 }
 
 body {
@@ -405,4 +430,50 @@ sup {
 
 .italic {
 	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
