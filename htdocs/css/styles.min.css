@@ -12,6 +12,8 @@ a.button-learnmore { float: right; position: absolute; right: 15px; bottom: 10px
 
 #learnmore { color: #fff; }
 
+#igor-about { width: 150px; margin: auto; }
+
 @media only screen and (max-width: 1280px) { #hero span.logo-bold, #hero span.logo-text-header { font-size: 200%; }
   #hero span.red { font-size: 100%; }
   #hero a.button, #hero a.button-learnmore { font-size: 70%; padding: 0 10px; } }

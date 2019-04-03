@@ -1,10 +1,10 @@
 Vue.component('left-nav', {
-    data: function() {
-        return{
+  data: function () {
+    return {
 
-        }
-    },
-    template: `<div id="side-nav">
+    }
+  },
+  template: `<div id="side-nav">
       <div><a href="index.html"><img src="pics/ECSI_logo.svg" style="height:100%;width:auto;" /></a></div>
       <div><img style="height:60%;margin-top:25px;" src="pics/Fibro_donut_end.svg" /></div>
       <div><a href="index.html"><img src="pics/Fibro_donut.svg" /><span class="icon fa fa-home fa-fw fa-lg"></span>Home</a></div>
@@ -21,12 +21,12 @@ Vue.component('left-nav', {
 })
 
 Vue.component('homepage', {
-    data: function() {
-        return{
+  data: function () {
+    return {
 
-        }
-    },
-    template: `<div id="homepage">
+    }
+  },
+  template: `<div id="homepage">
     <div id="hero">
       <img id="hero-banner" name="hm_tagline" src="pics/Fibro_banner.svg"
         width="100%" />
@@ -64,10 +64,10 @@ Vue.component('homepage', {
 })
 
 Vue.component('footer-nav', {
-    data: function() {
-        return{}
-    },
-    template: `
+  data: function () {
+    return {}
+  },
+  template: `
           <div id="bottom_nav" style="margin-top:20px;">
             <hr />
             <a href="index.html">Home</a> &#8226;
@@ -85,18 +85,17 @@ Vue.component('footer-nav', {
 
 
 const app = new Vue({
-    el: '#app',
-    data: {
-      message: 'a',
-    },
-    methods: {
-        url: function() {
-            if(document.URL.includes('index.html')){
-              return true
-            }
-            else {
-              return false
-            }
-        }
+  el: '#app',
+  data: {
+    message: 'a',
+  },
+  methods: {
+    url: function () {
+      if (document.URL.includes('index.html')) {
+        return true
+      } else {
+        return false
+      }
     }
+  }
 })
