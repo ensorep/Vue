@@ -45,6 +45,23 @@ Vue.component('homepage', {
       </div>`
 })
 
+Vue.component('newfooter', {
+  data: function() {
+      return{}
+  },
+  template: `
+        <div id="bottom_nav" style="margin-top:20px;">
+          <a href="about.html">About</a> &#8226;
+          <a href="technology.html">Technology</a> &#8226;
+          <a href="products.html">Products</a> &#8226;
+          <a href="news.html">News</a> &#8226;
+          <a href="faq.html">FAQ</a> &#8226;
+          <a href="contact.html">Contact</a>
+          <div style="margin-top:10px;text-align:center">&copy; ECSI Fibrotools</div>
+        </div>`
+})
+
+
 Vue.component('footer-nav', {
     data: function() {
         return{}
