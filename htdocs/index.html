@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/styles.min.css" />
+  <link rel="stylesheet" href="scss/styles.min.css" />
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -16,7 +16,6 @@
   <!-- End Google Tag Manager -->
   <meta name="description" content="ECSI FIBRotools: reliable electroplating equipment for MEMS R&D. tools that work." />
   <meta name="norton-safeweb-site-verification" content="kqcf3mh1xl47bcre-pyeg36hg0wzdor5lkkf-o6y49zsjx28t4dyn9c8jidui-0nozm8lrifn5fk0hpyuwjp0d47wsphvn8s2mutn0uf8q-2lhuf0ae94s3pcstl1gu7" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" defer/>
 </head>
 
 
@@ -28,32 +27,25 @@
   
   
   <div id="app">
-    <!-- <p v-if="this.url()">
-      OH JEEZ RICK!
-    </p> -->
     <left-nav></left-nav>
-      <homepage></homepage>
+    <homepage></homepage>
 
 
-      <div id="CTA">
-        <span class="CTA_sub">Efficient, precision benchtop equipment for electroplating.
-        Flexible and adaptable.</span>
-        
-      
-
-
+      <div class="CTA">
+        <span class="CTA_sub">Efficient, precision benchtop equipment for electroplating.Flexible and adaptable.</span>
       </div>
 
-      <div class="clients">
-        <div class="nasa"></div>
-        <div class="mit"></div>
-        <div class="boston"></div>
-        <div class="draper"></div>
-      </div>
+      <!-- <div class="clients">
+        <a class="clients-link" href="#"><img class="logo_nasa" src="customer-logos/nasa logo 1.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_mit" src="customer-logos/MIT logo 2.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_boston" src="customer-logos/BOSTON MICROMACHINES LOGO 1.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_draper" src="customer-logos/Charles Stark Draper Laboratory logo 1.png"/></a>
+      </div> -->
 
-      <newfooter></newfooter>
+    <foot></foot>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-  <script src='app.js'></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src='js/app.js'></script>
 </body>
 </html>
