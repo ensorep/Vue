@@ -7,27 +7,30 @@
             <div class="CTA_home"><button class="CTA_home-learn">Learn More</button></div>
           </div>
         </div>
+      <div class="clients">
+        <a class="clients-link" href="#"><img class="logo_nasa" src="../assets/nasa.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_mit" src="../assets/mit.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_boston" src="../assets/boston.png"/></a>
+        <a class="clients-link" href="#"><img class="logo_draper" src="../assets/draper.png"/></a>
+      </div>
       </div>
 </template>
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'Homepage',
     props: {
       msg: String
     }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
 
 a { text-decoration: none; color: #000; }
 
-.navbar { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
-
-.navbar-left { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+.navbar { display: -webkit-inline-box; display: -ms-inline-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; align-items: center}
 
 .navbar_footer { margin-top: 1rem; text-align: center; }
 
@@ -39,7 +42,7 @@ a { text-decoration: none; color: #000; }
 
 .navbar_logo-Fibrotools { margin: 0; padding: 0; font-size: 1.25rem; text-align: center; position: relative; bottom: .5rem; }
 
-.navbar .nav-ul { display: inline-block; margin: auto; padding: 0; }
+.navbar .nav-ul { display: inline-block; padding: 0; }
 
 .navbar .nav-ul .nav-a .nav-item { list-style: none; display: inline; padding-right: 2rem; font-size: 1.1rem; }
 
