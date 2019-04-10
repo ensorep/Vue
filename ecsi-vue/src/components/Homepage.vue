@@ -1,4 +1,5 @@
 <template>
+  <div>
    <div class="hero">
         <div class="hero-img">
           <div class="hero_focus">
@@ -7,13 +8,14 @@
             <div class="CTA_home"><button class="CTA_home-learn">Learn More</button></div>
           </div>
         </div>
+      </div>
       <div class="clients">
-        <a class="clients-link" href="#"><img class="logo_nasa" src="../assets/nasa.png"/></a>
-        <a class="clients-link" href="#"><img class="logo_mit" src="../assets/mit.png"/></a>
-        <a class="clients-link" href="#"><img class="logo_boston" src="../assets/boston.png"/></a>
-        <a class="clients-link" href="#"><img class="logo_draper" src="../assets/draper.png"/></a>
+        <div><a class="clients-link" href="#"><img class="logo_nasa" src="../assets/nasa.png"/></a></div>
+        <div><a class="clients-link" href="#"><img class="logo_mit" src="../assets/mit.png"/></a></div>
+        <div><a class="clients-link" href="#"><img class="logo_boston" src="../assets/boston.png"/></a></div>
+        <div><a class="clients-link" href="#"><img class="logo_draper" src="../assets/draper.png"/></a></div>
       </div>
-      </div>
+  </div>
 </template>
 
 <script>
@@ -34,6 +36,8 @@ a { text-decoration: none; color: #000; }
 
 .navbar_footer { margin-top: 1rem; text-align: center; }
 
+.navbar_footer a:hover {color: #993300; }
+
 .navbar_footer-copyright { margin-top: 1rem; }
 
 .navbar_logo { margin: .5rem; display: inline-block; }
@@ -45,6 +49,8 @@ a { text-decoration: none; color: #000; }
 .navbar .nav-ul { display: inline-block; padding: 0; }
 
 .navbar .nav-ul .nav-a .nav-item { list-style: none; display: inline; padding-right: 2rem; font-size: 1.1rem; }
+
+.nav-item a:hover {color: #993300};
 
 .hero { position: relative; }
 
