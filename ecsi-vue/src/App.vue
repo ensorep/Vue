@@ -9,12 +9,12 @@
       </div>
       <ul class="nav-ul navbar-right">
         <a class="nav-a"><li class="nav-item"><router-link to="/">Home</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">About</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">Technology</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">Products</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">News</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">FAQ</router-link></li></a>
-        <a class="nav-a"><li class="nav-item"><router-link to="/about">Contact</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">About</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">Technology</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">Products</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">News</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">FAQ</router-link></li></a>
+        <a class="nav-a"><li class="nav-item"><router-link to="/About">Contact</router-link></li></a>
       </ul>
     </div>
     <router-view/>

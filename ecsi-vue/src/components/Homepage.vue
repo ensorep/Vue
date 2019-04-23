@@ -9,12 +9,12 @@
           </div>
         </div>
       </div>
-      <div class="clients">
+      <!-- <div class="clients">
         <div><a class="clients-link" href="#"><img class="logo_nasa" src="../assets/nasa.png"/></a></div>
         <div><a class="clients-link" href="#"><img class="logo_mit" src="../assets/mit.png"/></a></div>
         <div><a class="clients-link" href="#"><img class="logo_boston" src="../assets/boston.png"/></a></div>
         <div><a class="clients-link" href="#"><img class="logo_draper" src="../assets/draper.png"/></a></div>
-      </div>
+      </div> -->
   </div>
 </template>
 
@@ -27,7 +27,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
 
 a { text-decoration: none; color: #000; }
