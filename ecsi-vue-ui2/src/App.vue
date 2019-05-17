@@ -34,6 +34,7 @@
 
 <style lang="scss">
 // ---------- Can't be scoped ----------- //
+$logo-blue: #3a95f9;
 body {
   // background-color: #bcc4c6;
   margin: 0;
@@ -61,8 +62,8 @@ a {
 
 <style lang="scss" scoped>
 // ------------- Mobile first ----------------
-$logo-red: #993300;
-
+$logo-blue: #3a95f9;
+$blue: #2c3e51;
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -81,18 +82,19 @@ $logo-red: #993300;
     margin: auto;
     padding: .5rem 0;
     color: inherit;
-    // background-color: #2c3e51;
     width: 100%;
   }
   &_logo {
       &-ECSI{
-      color: $logo-red;
+      color: $logo-blue;
       margin:0; 
       font-size: 3.5rem;
 
     }
     &-Fibrotools {
-      display: none;
+      margin: 0;
+      position: relative;
+      bottom: 1rem;
     } 
   }
   &_footer {
@@ -111,7 +113,7 @@ $logo-red: #993300;
       font-weight: bold;
 			list-style: none;
       display:inline-block;
-      font-size: .9rem;
+      font-size: 1rem;
       &:hover {
         color: inherit;
       }
@@ -119,11 +121,9 @@ $logo-red: #993300;
 		}
   }
   &_footer {
-    bottom: 0;
-    position: fixed;
     color: #2c2c2c;
     font-weight: bold;
-    background: linear-gradient(transparent,white);
+    background: #fff;
     padding: .25rem 0;
     width: 100%;
     text-align: center;
@@ -148,19 +148,16 @@ $logo-red: #993300;
 .navbar {
 	display:inline-flex;
 	justify-content: space-between;
-	width: 100%;
+  width: 100%;
+  border-bottom: solid 3px $blue;
 	&-left {
 		flex:1;
-    }
-    &_footer {
-        margin-top: 1rem;
-        text-align: center;
     }
 	&_logo {
 		margin: .5rem;
 		display: inline-block;
 		&-ECSI {
-			color: $logo-red;
+			color: $logo-blue;
 			font-size: 4rem;
 			margin: 0;
 			padding: 0;
@@ -186,12 +183,25 @@ $logo-red: #993300;
   .nav-ul {
     .nav-a {
         .nav-item {
-        font-size: 1.1rem;
+          transition: all .25s;
+          border-bottom: solid 3px white;
+        font-size: 1.3rem;
+        &:hover {
+          opacity: 1;
+          transition:  all .25s;
+          border-bottom: solid 3px $logo-blue;
+        }
       } 
     }
   }
   &_footer{ 
+    background-color: $logo-blue;
+    font-weight: bold;
+    font-size: 1.25rem;
     color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
   }
 }
 #bottom-nav {

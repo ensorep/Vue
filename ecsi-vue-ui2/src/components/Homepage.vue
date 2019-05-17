@@ -28,7 +28,7 @@
 </script>
 
 <style lang='scss' scoped>
-$logo-red: #993300;
+$logo-blue: #3a95f9;
 $blue: #2c3e51;
 $pinsblue: #c1c8ca;
 
@@ -40,7 +40,7 @@ $pinsblue: #c1c8ca;
 
 .hero {
   &-img {
-		background: rgba(255,255,255,0.5);
+		background: rgba(255,255,255,0.65);
 	}
 	&_focus {
 		display: block;
@@ -64,7 +64,7 @@ $pinsblue: #c1c8ca;
 			&-learn {
 				margin-top: 5rem;
 				border: none;
-				background-color: #993300;
+				background-color: $logo-blue;
 				transition: .5s;
 				padding: .75rem;
 				font-size: 1rem;
@@ -90,22 +90,23 @@ $pinsblue: #c1c8ca;
 		background-repeat: no-repeat;
 		background-size: cover;
 		width: 100%;
-		height: 90vh;
+			height: 90vh;
 		margin: auto;
 	}
 	&_focus {
 		position: relative;
-		padding: 2rem;
+		padding: 3rem;
 		top: 50%;
 		left: 50%;
+		height: initial;
 		transform: translate(-50%, -50%);
-		background-color: rgba(0,0,0,0.7);
+		background-color: rgba(255,255,255,0.65);
 		float: left;
 		text-align: center;
 		&-main{
 			padding: 0;
 			display: block;
-			color: #fff;
+			color: $blue;
 			position: relative;
 			font-size: 5rem;
 			margin: auto;
@@ -119,7 +120,7 @@ $pinsblue: #c1c8ca;
 		}
 		&-subline {
 			text-align: center;
-			color: #fff;
+			color: $blue;
 			font-size: 1.25rem;
 		}
 	}
@@ -143,7 +144,7 @@ $pinsblue: #c1c8ca;
 			border-radius: 4px; 
 			font-size: 1rem;
 			margin: 1.5rem 0 0 0;
-			background: $logo-red;
+			background: $logo-blue;
 			border: none;
 			color: #fff;
 			text-align: center;
@@ -169,7 +170,7 @@ $pinsblue: #c1c8ca;
 			&_boston {
 				position: relative;
 				width:70%;
-				right: 1rem;
+				right: 2rem;
 			}
 			&_draper {
 				width: 85%;
