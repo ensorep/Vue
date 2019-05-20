@@ -148,7 +148,7 @@ $logo-blue: #3a95f9;
 .about_what-text,
 .about_how-text,
 .about_ourStory-text{
-  font-size:1.8rem;
+  font-size:1.5rem;
 }
 .about_how-title,
 .about_why-title,
@@ -160,14 +160,41 @@ $logo-blue: #3a95f9;
 .CTA {
   &_about{
     &-learn {
-      width:40%;
+      width:50%;
       transition: all .5s;
       &:hover{
-        width: 50%;
+        width: 60%;
       }
     }
   }
 }
+}
+
+@media screen and (min-width: 1024px) {
+  .CTA {
+    &_about{
+      &-learn {
+        width:40%;
+        transition: all .5s;
+        &:hover{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1680px) {
+  .CTA {
+    &_about{
+      &-learn {
+        width:30%;
+        transition: all .5s;
+        &:hover{
+          width: 40%;
+        }
+      }
+    }
+  }
 }
 
 </style>

@@ -100,7 +100,7 @@ $pinsblue: #c1c8ca;
 		left: 50%;
 		height: initial;
 		transform: translate(-50%, -50%);
-		background-color: rgba(255,255,255,0.65);
+		background-color: rgba(255,255,255,.85);
 		float: left;
 		text-align: center;
 		&-main{
@@ -159,21 +159,21 @@ $pinsblue: #c1c8ca;
 .clients {
 	display: flex;
 	align-items: center;
-	margin: 1rem 0 2rem 0;
+	margin: 1rem 0 1rem 0;
 		.logo {
 			&_nasa {
-				width: 45%
+				width: 25%
 			}
 			&_mit {
-				width: 55%
+				width: 35%
 			}
 			&_boston {
 				position: relative;
-				width:70%;
+				width: 40%;
 				right: 2rem;
 			}
 			&_draper {
-				width: 85%;
+				width: 45%;
 			}
 		}
 		div {
@@ -182,7 +182,6 @@ $pinsblue: #c1c8ca;
 		}
 }
 }
-// ----------------- FOOTER ---------------------
 
 }
 </style>

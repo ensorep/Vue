@@ -26,15 +26,15 @@
         <a class="navbar_footer-a"><router-link to="/FAQ">FAQ</router-link></a>
         <a class="navbar_footer-a"><router-link to="/Contact">Contact</router-link></a>
       </span>
-      <div class="navbar_footer-copyright">&copy; ECSI Fibrotools</div>
+      <div class="navbar_footer-copyright">&copy; ECSI Fibrotools Inc.</div>
     </div>
   </div>
 </template>
 
 
 <style lang="scss">
-// ---------- Can't be scoped ----------- //
 $logo-blue: #3a95f9;
+// ---------- Can't be scoped ----------- //
 body {
   // background-color: #bcc4c6;
   margin: 0;
@@ -61,7 +61,7 @@ a {
 
 
 <style lang="scss" scoped>
-// ------------- Mobile first ----------------
+// ------------- Mobile first ---------------- //
 $logo-blue: #3a95f9;
 $blue: #2c3e51;
 #app {
@@ -88,7 +88,7 @@ $blue: #2c3e51;
       &-ECSI{
       color: $logo-blue;
       margin:0; 
-      font-size: 3.5rem;
+      font-size: 3.4rem;
 
     }
     &-Fibrotools {
@@ -144,12 +144,14 @@ $blue: #2c3e51;
 
 //----------------- Tablet --------------------//
 @media screen and (min-width:768px){ 
+.router-link-exact-active {
+ border-bottom: 3px solid $logo-blue;
+}
 
 .navbar {
 	display:inline-flex;
 	justify-content: space-between;
   width: 100%;
-  border-bottom: solid 3px $blue;
 	&-left {
 		flex:1;
     }
@@ -181,11 +183,13 @@ $blue: #2c3e51;
 @media screen and (min-width: 1024px) {
 .navbar {
   .nav-ul {
+    justify-content: flex-end;
     .nav-a {
+      padding-right: 2rem;
         .nav-item {
           transition: all .25s;
           border-bottom: solid 3px white;
-        font-size: 1.3rem;
+        font-size: 1rem;
         &:hover {
           opacity: 1;
           transition:  all .25s;
@@ -197,7 +201,7 @@ $blue: #2c3e51;
   &_footer{ 
     background-color: $logo-blue;
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #fff;
     padding: 1rem 0;
     display: flex;
@@ -205,7 +209,7 @@ $blue: #2c3e51;
   }
 }
 #bottom-nav {
-  display: inline;
+  display: inline-block;
 }
 }
 </style>
